@@ -1,2 +1,12 @@
-# ubuntu-ruby-docker
-Dockerfile to install ubuntu with any version of ruby
+# Ubuntu 20.04 + Ruby docker container
+Dockerfile to install Ubuntu 20.04 with any version of Ruby.
+
+Ruby version 3.0.1 will be installed by default. 
+
+But you can change the version in dockerfile or use the RUBY_VERSION argument on the command line
+
+```bash
+docker build -t ubuntu-ruby --build-arg RUBY_VERSION=2.5.0 .
+```
+
+The package uses [rbenv](https://github.com/rbenv/rbenv) to install ruby.
