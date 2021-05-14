@@ -1,4 +1,4 @@
-# Ubuntu 20.04 + Ruby docker container
+# Ubuntu 20.04 + Ruby docker container [![Build Status](https://travis-ci.com/alexkargin/ubuntu-ruby-docker.svg?branch=main)](https://travis-ci.com/github/alexkargin/ubuntu-ruby-docker)
 Dockerfile to install Ubuntu 20.04 with any version of Ruby.
 
 Ruby version 3.0.1 will be installed by default. 
