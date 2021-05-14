@@ -8,5 +8,6 @@ But you can change the version in dockerfile or use the RUBY_VERSION argument on
 ```bash
 docker build -t ubuntu-ruby --build-arg RUBY_VERSION=2.5.0 .
 ```
+Available on [Docker Hub](https://hub.docker.com/r/alexkargin/ubuntu-ruby-docker).
 
 The package uses [rbenv](https://github.com/rbenv/rbenv) to install ruby.
