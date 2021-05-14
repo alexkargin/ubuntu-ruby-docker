@@ -11,3 +11,14 @@ docker build -t ubuntu-ruby --build-arg RUBY_VERSION=2.5.0 .
 Available on [Docker Hub](https://hub.docker.com/r/alexkargin/ubuntu-ruby-docker).
 
 The package uses [rbenv](https://github.com/rbenv/rbenv) to install ruby.
+
+## Installing Ruby 2.3.8 or lower
+
+To install Ruby version 2.3.8 or below, you need to uncomment in the Dockerfile
+
+```bash
+RUN echo "deb http://security.ubuntu.com/ubuntu bionic-security main" | tee -a /etc/apt/sources.list
+RUN apt-get update && apt-cache policy libssl1.0-dev
+RUN apt-get purge -y libssl-dev
+RUN apt-get install -y libssl1.0-dev
+```
